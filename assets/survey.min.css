@@ -1,0 +1,4 @@
+.survey_button,.survey_button2,.name,.profile{cursor:pointer}#comment1,#comment2,#comment3,#comment4,#comment5,#comment6,#content2,#content3,#q2,#q3,#q4,#q5,#result1,#result2,#result3{display:none}
+.survey_button,.survey_button2,.loading{text-align:center}.survey_button,.main-content{padding:10px;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px}
+.name,.result{font-weight:700}p.question{font-size:15px}.survey_button{border:2px solid #f0f0f0;color:#fff;padding:5px 0;margin:5px 0;box-shadow:0 1px 4px 0 rgba(0,0,0,.74)}
+.main-content .result{margin:0;padding:5px 0 5px 25px}.survey_button2{background-color:red;font-size:20px;padding:10px;-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;color:#fff;box-shadow:0 1px 4px 0 #000}

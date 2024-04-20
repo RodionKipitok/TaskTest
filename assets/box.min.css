@@ -1,0 +1,13 @@
+.boxes,.boxes cbox,.boxes .try img{width:100%}.instructions{padding:10px;background-color:#e11e26;border-radius:4px;color:#fff;margin-top:20px}.boxes{margin:10px auto;max-width:800px}
+.box-o-t{position:absolute;top:-34%}.boxes .discover .box-o-b{z-index:1;position:relative}.boxes .iphone{width:76%;height:auto;position:absolute;z-index:0;top:-20%;left:12%;-webkit-transition-duration:.7s;transition-duration:.7s}
+.boxes .discover>.iphone{top:-60%}.boxes>.try{position:relative;display:inline-block;width:23.8%;-webkit-transition-duration:.2s;transition-duration:.2s;cursor:pointer}
+@media(max-width:767px){.boxes>.try{width:32.5%}.boxes>.try:nth-child(-n+4){display:none}}@media(max-width:479px){.boxes>.try{width:32%}}@media(max-width:319px){.boxes>.try{width:48%}
+.boxes>.try:nth-child(-n+5){display:none}}.div_img_gift{width:100%;text-align:center;position:absolute;top:0;left:0;z-index:5;display:none;align-items:center;justify-content:center}
+.img_gift{display:none;width:70%;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:rotateIn;animation-name:rotateIn;margin:0 auto}
+@-webkit-keyframes rotateIn{0%{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:rotate3d(0,0,1,-200deg);transform:rotate3d(0,0,1,-200deg);opacity:0}
+100%{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:none;transform:none;opacity:1}}@keyframes rotateIn{0%{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:rotate3d(0,0,1,-200deg);transform:rotate3d(0,0,1,-200deg);opacity:0}
+100%{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:none;transform:none;opacity:1}}@keyframes tapa_superior{0%{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:rotate3d(0,0,1,-200deg);transform:rotate3d(0,0,1,-200deg);opacity:0}
+100%{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:none;transform:none;opacity:1}}.boxes{background-size:cover;border-radius:20px;position:relative;text-align:center}
+.try{position:relative;margin:20px 0}.try>div{position:absolute}.try .caja{position:relative}.caja_trasera{z-index:1}.caja_tapa{z-index:3}.caja{z-index:2}
+.caja_gift{z-index:1}.boxes .try.abierta>.caja_tapa{animation:tapa_superior 2s forwards}.boxes .try.premiazo>.caja_gift{animation:tapa_superior 4s infinite alternate}
+@keyframes tapa_superior{from{top:0}to{top:-40px}}@media(max-width:500px){@keyframes tapa_superior{from{top:0}to{top:-30px}}}
