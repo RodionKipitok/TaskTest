@@ -4,7 +4,26 @@ const containerQuestionPanel = document.querySelector(".questionPanel");
 const btnSaveAnswerUserOnConsoleLog =
   document.getElementById("p_modal_button3");
 
-console.log(containerQuestionPanel);
+const arrAnswer = [];
+
+btnSaveAnswerUserOnConsoleLog.addEventListener(
+  "click",
+  showAnswerUserOnConsoleLog
+);
+
+function showAnswerUserOnConsoleLog(event) {
+  event.preventDefault();
+  btnSaveAnswerUserOnConsoleLog.removeAttribute("href");
+  arrAnswer.map((item) => {
+    console.log(item);
+  });
+}
+
+containerQuestionPanel.addEventListener("click", getAnswerUser);
+
+function getAnswerUser(event) {
+  arrAnswer.push(event.target.textContent);
+}
 
 // Add comment user
 
