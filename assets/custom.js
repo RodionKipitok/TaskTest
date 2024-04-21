@@ -1,3 +1,13 @@
+// Save answer user with model question panel
+
+const containerQuestionPanel = document.querySelector(".questionPanel");
+const btnSaveAnswerUserOnConsoleLog =
+  document.getElementById("p_modal_button3");
+
+console.log(containerQuestionPanel);
+
+// Add comment user
+
 const form = document.querySelector(".form-user-comment");
 
 form.addEventListener("submit", handleSubmit);
@@ -15,9 +25,8 @@ function handleSubmit(event) {
 }
 
 function creatMarkapCommentUser(comment) {
-  console.log(comment);
-
-  const word = "fuck";
+  const commentTime = new Date().getMinutes();
+  const commentLike = getRndInteger();
   const markup = `<div class="comments" id="comment0" style="display: block">
   <div class="profile">
     <img src="assets/Images/3.jpg" />
@@ -38,7 +47,7 @@ function creatMarkapCommentUser(comment) {
       </font>
       <img src="assets/Images/like.png" width="15px" height="15px" />
       <font style="vertical-align: inherit">
-        <font style="vertical-align: inherit">29</font>
+        <font style="vertical-align: inherit">${commentLike}</font>
       </font>
     </span>
     <font style="vertical-align: inherit">
@@ -49,7 +58,7 @@ function creatMarkapCommentUser(comment) {
       <small>
         <u>
           <font style="vertical-align: inherit"
-            >4 minutos antes</font
+            >${commentTime} minutos atrás</font
           >
         </u>
       </small>
@@ -66,14 +75,8 @@ function creatMarkapCommentUser(comment) {
   form.insertAdjacentHTML("afterend", markup);
 }
 
-// anonymous
-
-{
-  /* <p>
-<font style="vertical-align: inherit">
-  <font style="vertical-align: inherit"
-    >${comment}</font
-  >
-</font>
-</p> */
+function getRndInteger() {
+  const min = 1;
+  const max = 100;
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
